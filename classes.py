@@ -5,6 +5,20 @@ class Cliente():
         self.__cpf = cpf
         self.__senha = senha
         self.__clientes = []
+
+class OperacoesFinanceiras(ABC):
+
+    @abstractmethod
+    def sacar(self,valor):
+        pass
+
+    @abstractmethod
+    def deposito(self,valor):
+        pass
+
+    @abstractmethod
+    def consultar_saldo(self):
+        pass
         
 
 class Banco():
@@ -12,7 +26,7 @@ class Banco():
         pass
 
 class Conta():
-    def __init__(self):
+    def __init__(self,):
         pass
 
 class ContaCorrente(Conta):
