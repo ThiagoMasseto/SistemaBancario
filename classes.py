@@ -1,6 +1,11 @@
+from abc import ABC, abstractmethod
 class Cliente():
-    def __init__(self, nome, cpf, senha):
-        pass
+    def __init__(self, nome : str, cpf : str, senha : str):
+        self.__nome = nome
+        self.__cpf = cpf
+        self.__senha = senha
+        self.__clientes = []
+        
 
 class Banco():
     def __init__(self):
