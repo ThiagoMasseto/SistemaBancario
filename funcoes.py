@@ -15,6 +15,7 @@ def menu():
                 print("Saindo... Até logo!")
                 time.sleep(1)
                 os.system("cls")
+                break
             case _:
                 print("OPÇÃO INVÁLIDA, TENTE NOVAMENTE!")
                 time.sleep(1.5)
