@@ -31,6 +31,10 @@ class OperacoesFinanceiras(ABC):
         pass
 
     @abstractmethod
+    def transferencias(self,conta,valor):
+        pass
+
+    @abstractmethod
     def consultar_saldo(self):
         pass
         
