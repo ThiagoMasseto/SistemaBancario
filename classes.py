@@ -4,7 +4,6 @@ class Cliente():
         self.__nome = nome
         self.__cpf = cpf
         self.__senha = senha
-        self.__clientes = []
 
     def getNome(self):
         return self.__nome
@@ -37,8 +36,9 @@ class OperacoesFinanceiras(ABC):
         
 
 class Banco():
-    def __init__(self,):
-        pass
+    def __init__(self):
+        self.__clientes =[]
+        self.__contas = []
 
 class Conta():
     def __init__(self,nome : str, cpf : str, senha : str, saldo : float):
@@ -46,7 +46,6 @@ class Conta():
         self.__cpf = cpf
         self.__senha = senha
         self.__saldo = saldo
-        self.__contas =[]
         
     def getNome(self):
         return self.__nome
@@ -59,11 +58,11 @@ class Conta():
     
     def setNome(self, nome):
         self.__nome = nome
-    def setNome(self, cpf):
+    def setCpf(self, cpf):
         self.__cpf = cpf
-    def setNome(self, senha):
+    def setSenha(self, senha):
         self.__senha = senha
-    def setNome(self, saldo):
+    def setSaldo(self, saldo):
         self.__saldo = saldo
     
 
