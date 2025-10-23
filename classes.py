@@ -73,10 +73,10 @@ class Conta():
         self.__saldo = saldo
     
 
-class ContaCorrente(Conta):
+class ContaCorrente(Conta, OperacoesFinanceiras):
     pass
 
-class ContaPoupanca(Conta):
+class ContaPoupanca(Conta, OperacoesFinanceiras):
     pass
 
 class Extrato():
