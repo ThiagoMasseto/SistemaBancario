@@ -40,6 +40,13 @@ class Banco():
         self.__clientes =[]
         self.__contas = []
 
+    def adicionar_cliente(self, cliente):
+        self.__clientes.append(cliente)
+
+    def adicionar_conta(self, conta):
+        self.__contas.append(conta)
+
+
 class Conta():
     def __init__(self,nome : str, cpf : str, senha : str, saldo : float):
         self.__nome = nome
